@@ -1,0 +1,104 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 640px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Cormorant Garamond", Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 10vw;
+  font-weight: bold;
+  padding-bottom: 3vw;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 3.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.left-expand {
+  padding-left: 15px;
+  float: left;
+  width: 100%;
+  padding-right: 160px;
+  box-sizing: border-box;
+}
+
+.right-fixed {
+  padding-right: 15px;
+  float: right;
+  width: 160px;
+  margin-left: -160px;
+}
+
+@media (max-width: 350px) {
+  span.xs-abbrev {
+    display: none;
+  }
+  .left-expand {
+    padding-right: 110px;
+  }
+  .right-fixed {
+    width: 110px;
+    margin-left: -110px;
+  }
+}
+
+.result {
+  padding-top: 20px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#search-bar {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#search-results {
+  padding-top: 10px;
+}
+
+#random {
+  float: right;
+}
+
+
+/* Code to get footer centered and sticky at bottom */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  text-align: center;
+}
+
+.footer .container p {
+  font-size: 1em !important;
+}
+
+.text-muted {
+  color: #999999;
+}

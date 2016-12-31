@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/CormorantGaramond.css" rel="stylesheet" type="text/css">
+  <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+  <h1>Wikipedia viewer</h1>
+  <div id="search-bar" class="row">
+    <div class="left-expand">
+      <div class="input-group">
+        <input id="search-text" type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+        <button id ="search-button" class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true" title="Search for Wikipedia articles"></i>
+    <span class="sr-only">Search</span></button>
+        </span>
+      </div>
+      <!-- /input-group -->
+    </div>
+    <div class="right-fixed">
+      <button id="random" class="btn btn-default" type="button">Random<span class="xs-abbrev"> article</span></button>
+      <!-- /input-group -->
+    </div>
+  </div>
+  <ul id="search-results" class="list-group">
+  </ul>
+</div>
+<footer class="footer" ">
+      <div class="container ">
+        <p class="text-muted ">by Raphey Holmes</p>
+      </div>
+    </footer>
+
+<script src='js/jquery.min.js'></script>
+<script src='js/bootstrap.min.js'></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
